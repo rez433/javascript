@@ -1,8 +1,6 @@
 // ############## Dom Variables ################
 var pattern = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/
-
 var form = document.querySelector('form')
-
 var email = document.getElementById('field_email')
 var firstName = document.getElementById('field_firstname')
 
