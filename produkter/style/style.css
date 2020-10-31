@@ -1,0 +1,54 @@
+.table {
+  background: white;
+}
+
+tr#sumrow {
+  background-color: #cce4ff;
+}
+
+tr#sumrow td:first-child::after {
+  content: "\a0";
+}
+
+.b2b {
+  visibility: visible;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  max-width: 400px;
+  font-size: 20px;
+  background-color: rgb(13, 192, 37);
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(216, 247, 43);
+}
+.b2b:after {
+  content: "Max antal är 10 beställning per vara. Kontakta B2B support för att få bättre pris och vilkor. telefon: 08-xxxxxxx";
+}
+
+.maxAntal {
+  background-color: rgb(13, 192, 37);
+}
+
+button {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 20px;
+}
+
+.rabatt {
+  font-size: 18px;
+  padding: 5px 10px;
+  max-width: 160px;
+}
+
+.rabattSpan {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 10px;
+  max-width: 100%;
+  min-width: 110px;
+}
