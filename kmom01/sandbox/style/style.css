@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(74, 112, 12);
+}
+
+.content {
+    border: 1px solid black;
+    background-color: rgb(126, 208, 240);
+    padding: 2em;
+    margin: 0 auto;
+    height: 500px;
+    width: 800px;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}
