@@ -9,37 +9,37 @@ var ref = document.querySelector('script')
 let style = document.createElement('style')
 style.innerHTML = `
     button{
-        float: right
+        float: right;
     }
     #addDiv {
-        display: flex
+        display: flex;
     }
     #addDiv {
-        flex-direction: column
+        flex-direction: column;
     }
     .post {
-        border: 1px solid #ccc
+        border: 1px solid #ccc;
     }
     .post {
-        border-radius: 5px
+        border-radius: 5px;
     }
     .post {
-        margin-bottom: 5px
+        margin-bottom: 5px;
     }
     .post{
-        padding: 5px
+        padding: 5px;
     }
     .post{
-        box-shadow: 4px 2px #ccc
+        box-shadow: 4px 2px #ccc;
     }
     .checked {
-        color: orange
+        color: orange;
     }
     #primarycontent > div:nth-child(1){
-        flex-direction: column
+        flex-direction: column;
     }
     .mine{
-      border: 2px solid black
+      border: 2px solid black;
     }
 `
 ref.parentNode.insertBefore(style, ref)
