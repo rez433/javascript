@@ -217,15 +217,11 @@ function highlight () {
     post.style.background = ''
     post.style.color = 'black'
     post.childNodes[1].style.textAlign = 'left'
-    post.style.paddingTop = ''
-  post.style.paddingBottom = ''
   })
   let receptId = `#${this.children[0].className}`
   let post = document.querySelector(receptId)
   post.style.background = '#12343b'
   post.style.color = 'white'
-  post.style.paddingTop = '4rem'
-  post.style.paddingBottom = '2rem'
   post.childNodes[1].style.textAlign = 'center'
 }
 
@@ -248,7 +244,7 @@ function searchAddDiv () {
   titInput.placeholder = 'title...'
 
   const receptInput = document.createElement('TEXTAREA')
-  receptInput.placeholder = 'recept text...\nUppdatera sidan efter publish,för att se din nya recept'
+  receptInput.placeholder = 'recept text...'
   receptInput.rows = '6'
   receptInput.setAttribute('id', 'receptInput')
   receptInput.required = true
@@ -268,7 +264,7 @@ function searchAddDiv () {
       titInput.value = ''
     }else {
       addDiv.style.display = 'flex'
-      addBtn.innerHTML = 'Cancel'
+      addBtn.innerHTML = 'CanceL'
     }
   })
 
@@ -302,15 +298,7 @@ function matchArray (ord, alla_recept) {
   // filter skapar ny array av de matchat ord/recept och sparas i hittatMatch och returnerar 
   // den till display som i sin tur anropar genLi funktion för att skapa en li element med länk 
   let hittatMatch = alla_recept.filter(recept => recept.children[0].innerText.match(regex))
-  let hittat = ''
-  data.forEach((hittatMatch) => {
-    let hittat = hittatMatch.replace(
-      hittatMatch,
-      `<span style="color:red">${regex}</span>`
-    );
   return hittatMatch
-})
-
 }
 
 //
