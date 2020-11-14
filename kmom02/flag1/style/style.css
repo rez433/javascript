@@ -1,0 +1,159 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(74, 112, 12);
+}
+
+.content {
+    border: 1px solid black;
+    background-color: rgb(126, 208, 240);
+    padding: 2em;
+    margin: 0 auto;
+    height: auto;
+    width: 1100px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* ################## Flaggor ##################### */
+
+.flag {
+    margin: 1rem;
+}
+
+/* ########### Armenien ############*/
+.ar {
+    background-color: #0033A0;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.ar > .part1,
+.ar > .part2 {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 0;
+}
+
+.ar > .part1 {
+    background-color: #D90012;
+    top: 0;
+}
+
+.ar > .part2 {
+    background-color: #DDDDDD;
+    top: 200px;
+}
+
+
+/* ########### Sverige ############*/
+.sv {
+    background-color: #056AA7;
+    position: relative;
+    width: 400px;
+    height: 250px;
+}
+
+.sv > .part1,
+.sv > .part2 {
+    background-color: #FDCC16;
+    position: absolute;
+}
+
+.sv > .part1 {
+    width: 40px;
+    height: 250px;
+    top: 0;
+    left: 110px;
+}
+
+.sv > .part2 {
+    width: 400px;
+    height: 40px;
+    top: 110px;
+    left: 0;
+}
+
+/* ########### Surinam ############*/
+.sur {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: #327E3D;
+}
+
+.sur > .part1,
+.sur > .part2 {
+    position: absolute;
+    width: 300px;
+    left: 0;
+}
+.sur > .part1 {
+    background-color: white;
+    top: 30px;
+    bottom: 30px;
+}
+
+.sur > .part2 {
+    background-color: #B50428;
+    top: 50px;
+    bottom: 50px;
+}
+
+.sur > .part2::before {
+    content: '\2605';
+    color: yellow;
+    font-size: 145px;
+    position: absolute;
+    left: 90px;
+    top: -55px;
+}
+
+/* ########### Sudan ############*/
+.sud {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background-color: white;
+}
+
+.sud > .part1,
+.sud > .part2 {
+    position: absolute;
+    height: 66px;
+    left: 0;
+    width: 400px;
+}
+
+.sud > .part1 {
+    background-color:#D20930;
+    top: 0;
+}
+
+.sud > .part2 {
+    background-color: #000000;
+    bottom: 0;
+}
+
+.sud > .part3 {
+    width: 200px;
+    height: 140px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: -30px;
+    top: 30px;
+    background-color: #007226;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
