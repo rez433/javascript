@@ -1,0 +1,176 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(74, 112, 12);
+}
+
+.content {
+    border: 1px solid black;
+    background-color: rgb(126, 208, 240);
+    padding: 2em;
+    margin: 0 auto;
+    min-height: 600px;
+    height: auto;
+    max-width: 1100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.flagDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+
+/* ################## Flaggor ##################### */
+.display {
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.flagslist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ########### Armenien ############*/
+div > .Armenien {
+    background-color: #0033A0;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.Armenien > .part1,
+.Armenien > .part2 {
+    position: absolute;
+    width: 300px;
+    height: calc(200px/3);
+    left: 0;
+}
+
+.Armenien > .part1 {
+    background-color: #D90012;
+    top: 0;
+}
+
+.Armenien > .part2 {
+    background-color: #DDDDDD;
+    bottom: calc(200px/3);
+}
+
+
+/* ########### Sverige ############*/
+div > .Sweden {
+    background-color: #056AA7;
+    position: relative;
+    width: 300px;
+    height: calc(300px * (5/8));
+}
+
+.Sweden > .part1,
+.Sweden > .part2 {
+    background-color: #FDCC16;
+    position: absolute;
+}
+
+.Sweden > .part1 {
+    width: 25px;
+    height: calc(300px * (5/8));
+    top: 0;
+    left: 90px;
+}
+
+.Sweden > .part2 {
+    width: 300px;
+    height: 25px;
+    top: calc((150px * (5/8)) - (25px/2));
+    left: 0;
+}
+
+/* ########### Surinam ############*/
+div > .Surinam {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: #327E3D;
+}
+
+.Surinam > .part1,
+.Surinam > .part2 {
+    position: absolute;
+    width: 300px;
+    left: 0;
+}
+.Surinam > .part1 {
+    background-color: white;
+    top: 30px;
+    bottom: 30px;
+}
+
+.Surinam > .part2 {
+    background-color: #B50428;
+    top: 50px;
+    bottom: 50px;
+}
+
+.Surinam > .part2::before {
+    content: '\2605';
+    color: yellow;
+    font-size: 145px;
+    position: absolute;
+    left: 90px;
+    top: -55px;
+}
+
+/* ########### Sudan ############*/
+div > .Sudan {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: white;
+}
+
+.Sudan > .part1,
+.Sudan > .part2 {
+    position: absolute;
+    height: 66px;
+    left: 0;
+    width: 300px;
+}
+
+.Sudan > .part1 {
+    background-color:#D20930;
+    top: 0;
+}
+
+.Sudan > .part2 {
+    background-color: #000000;
+    bottom: 0;
+}
+
+.Sudan > .part3 {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: -40px;
+    top: 40px;
+    background-color: #007226;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
