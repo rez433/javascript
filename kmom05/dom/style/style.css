@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(74, 112, 12);
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+}
+
+.green {
+    background-color: green;
+}
+
+.size200 {
+    height: 200px;
+    width: 200px;   
+}
+
+.selected {
+    border: 6px dashed black;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.black {
+    background: black;
+}
+
+.orange {
+    background: orange;
+}
+
+.purple {
+    background: purple;
+}
+
+
+.animateSize {
+    width: 2px;
+    height: 2px;
+    transition: width 1s, height 1s;
+}
+
+.triangle {
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.oval {
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.rectangle {
+    height: 100px;
+    width: 200px;
+}
