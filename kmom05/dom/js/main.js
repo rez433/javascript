@@ -106,13 +106,17 @@
     function chngZ(e) {
         let all = document.querySelectorAll('.selected');
 
-        if (e.key === 'a' && all.length > 0) {
-            // let z = e.target.firstChild.style.zIndex;
-            e.target.firstChild.style.zIndex -= 1;
-        } else if (e.key === 's' && all.length > 0) {
-            // let z = e.target.firstChild.style.zIndex;
-            e.target.firstChild.style.zIndex = parseInt(e.target.firstChild.style.zIndex) + 1;
-        }
+        all.forEach(elm => {
+            if (e.key === 'a') {
+                let zndx = parseInt(elm.style.zIndex) + 1;
+
+                elm.style.zIndex = zndx;
+            } else if (e.key === 's') {
+                let zndx = parseInt(elm.style.zIndex) - 1;
+
+                elm.style.zIndex = zndx;
+            }
+        });
     }
 
     function duplicate(e) {
@@ -127,9 +131,9 @@
         elm.id = Date.now();
         elm.classList.remove('selected');
         elm.classList.add(`clone`);
-        const z = countElm();
+        // const z = countElm();
 
-        elm.style.zIndex = z + 1;
+        elm.style.zIndex = 1;
         elm.addEventListener('click', e => toggleSelected(e));
 
         if (e.key === 't') {
@@ -266,6 +270,35 @@
         }
     }
 
+    function addSize(e) {
+        let all = document.querySelectorAll('.selected');
+
+        if (e.key === 'q') {
+            all.forEach(elm => {
+                let elmWidth = parseInt(elm.clientWidth);
+                let elmHeight = parseInt(elm.clientWidth);
+
+                elm.style.height = elmHeight + 10 + 'px';
+                elm.style.width = elmWidth + 10 + 'px';
+            });
+        }
+    }
+
+    function minSize(e) {
+        let all = document.querySelectorAll('.selected');
+
+        if (e.key === 'w') {
+            all.forEach(elm => {
+                let elmWidth = parseInt(elm.clientWidth) - 10;
+                let elmHeight = parseInt(elm.clientHeight) - 10;
+
+                elm.style.height = elmHeight + 'px';
+                elm.style.width = elmWidth + 'px';
+            });
+        }
+    }
+
+
     function turnElm(e) {
         if (e.key === 'o') {
             const all = document.querySelectorAll('.selected');
@@ -356,6 +389,14 @@
 
             case 'o':
                 turnElm(e);
+                break;
+
+            case 'q':
+                addSize(e);
+                break;
+
+            case 'w':
+                minSize(e);
                 break;
         }
     });
