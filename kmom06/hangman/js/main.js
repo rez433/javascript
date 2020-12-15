@@ -5,6 +5,10 @@
     const hangman = window.Hangman;
     const letters = document.querySelector('.letters');
     const matchDiv = document.querySelector('.match');
+    const resetBtn = document.querySelector('.reset');
+
+    resetBtn.style.display = 'none';
+    resetBtn.addEventListener('click', function() {window.location.reload();});
     let fail = 0;
     let match = [];
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ".split('');
@@ -50,6 +54,7 @@
                 console.log('you win');
                 letters.parentNode.removeChild(letters);
                 document.querySelector('.winmsg').innerHTML = winMsg;
+                resetBtn.style.display = 'block';
             }
         } else {
             fail++;
@@ -57,6 +62,7 @@
             if (fail === hangman.validParts.length) {
                 letters.parentNode.removeChild(letters);
                 document.querySelector('.winmsg').innerHTML = failMsg;
+                resetBtn.style.display = 'block';
             }
         }
     }
